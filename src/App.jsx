@@ -2,14 +2,17 @@ import logo from "./logo.svg";
 import "./App.css";
 import team from "./Assets/data.js";
 import Card from "./components/Card";
+import styles from "./App.module.scss";
 
 function App() {
-  const getTeamMember = team.map((member) => {
-    return member.id;
-  });
+  const getTeamMember = (member) => {
+    return <Card member={member}></Card>;
+  };
+
   return (
-    <div className="App">
-      <Card member={getTeamMember}></Card>
+    <div className={styles.main}>
+      <h1> Ticket Tracker</h1>
+      <div className={styles.cards}>{team.map(getTeamMember)}</div>
     </div>
   );
 }
