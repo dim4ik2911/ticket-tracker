@@ -7,8 +7,8 @@ const Card = (props) => {
   return (
     <div className={styles.card}>
       <div className={styles.text}>
-        <p>{name}</p>
-        <p>{role}</p>
+        <p className={styles.title}>{name}</p>
+        <p className={styles.role}>{role}</p>
       </div>
       <Counter></Counter>
     </div>

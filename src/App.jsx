@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className={styles.main}>
-      <h1> Ticket Tracker</h1>
+      <h1 className={styles.title}> Ticket Tracker</h1>
       <div className={styles.cards}>{team.map(getTeamMember)}</div>
     </div>
   );

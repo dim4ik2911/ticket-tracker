@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
   gap: 3%;
 }
 
@@ -14,8 +14,39 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  border: 5px solid black;
+  background: rgb(127, 130, 230);
+  background: linear-gradient(
+    101deg,
+    rgba(127, 130, 230, 1) 0%,
+    rgba(249, 71, 61, 1) 56.00000000000001%,
+    rgba(139, 150, 230, 1) 96%
+  );
 }
 
+.title {
+  font-size: 1.5vw;
+  margin-bottom: 3%;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 1rem 3rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    166deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(158, 150, 198, 1) 100%
+  );
+}
 * {
   font-size: 1.3vw;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

@@ -5,7 +5,9 @@ import { useState } from "react";
 const Counter = () => {
   const [count, setCount] = useState(0);
   const countMinusOne = () => {
-    return setCount(count - 1);
+    if (count > 0) {
+      return setCount(count - 1);
+    }
   };
   const countPlusOne = () => {
     return setCount(count + 1);
@@ -16,7 +18,7 @@ const Counter = () => {
   return (
     <div className={styles.counter}>
       <p> Counter</p>
-      <p> {count}</p>
+      <p className={styles.count}> {count}</p>
       <div className={styles.buttons}>
         <span onClick={countMinusOne}>-</span>
         <span onClick={countPlusOne}>+</span>
